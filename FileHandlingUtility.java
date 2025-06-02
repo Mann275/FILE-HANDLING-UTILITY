@@ -28,9 +28,9 @@ public class FileHandlingUtility {
     public static void writeToFile(String content) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_PATH))) {
             writer.write(content);
-            System.out.println("✅ File written successfully.\n");
+            System.out.println("File written successfully.\n");
         } catch (IOException e) {
-            System.err.println("❌ Error writing to file: " + e.getMessage());
+            System.err.println("Error writing to file: " + e.getMessage());
         }
     }
 
@@ -38,7 +38,7 @@ public class FileHandlingUtility {
     // Reads and prints the contents of the file line by line.
 
     public static void readFromFile() {
-        System.out.println("📄 Reading file content:");
+        System.out.println("Reading file content:");
         try (BufferedReader reader = new BufferedReader(new FileReader(FILE_PATH))) {
             String line;
             while ((line = reader.readLine()) != null) {
@@ -46,7 +46,7 @@ public class FileHandlingUtility {
             }
             System.out.println();
         } catch (IOException e) {
-            System.err.println("❌ Error reading file: " + e.getMessage());
+            System.err.println("Error reading file: " + e.getMessage());
         }
     }
 
@@ -63,10 +63,10 @@ public class FileHandlingUtility {
 
             // Write the modified content back to the file
             Files.write(Paths.get(FILE_PATH), content.getBytes());
-            System.out.println("✏️ File modified successfully (replaced '" + target + "' with '" + replacement + "').\n");
+            System.out.println("File modified successfully (replaced '" + target + "' with '" + replacement + "').\n");
 
         } catch (IOException e) {
-            System.err.println("❌ Error modifying file: " + e.getMessage());
+            System.err.println("Error modifying file: " + e.getMessage());
         }
     }
 }
