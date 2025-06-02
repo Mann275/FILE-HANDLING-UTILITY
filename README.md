@@ -11,19 +11,13 @@
 
 ## TASK DESCRIPTION
 
-The "File Handling Utility" is a Java-based project developed as part of the CODTECH internship under the Front-End Development domain. This task aims to demonstrate fundamental file operations in Java — specifically, reading, writing, and modifying text files.
+This project is a simple Java utility that performs basic file handling operations: writing to a file, reading from a file, and modifying its contents.
 
-File handling is a critical aspect of software development, commonly used for managing configurations, storing logs, and handling user-generated content. In this project, Java’s built-in I/O (Input/Output) classes such as `FileReader`, `FileWriter`, `BufferedReader`, `BufferedWriter`, and `Files` are utilized to perform operations on a file named `example.txt`.
+The program starts by writing sample content into a file named `example.txt` using `BufferedWriter`. It then reads the file line by line using `BufferedReader` to display the existing content. To demonstrate modification, it replaces a specified word in the file using string replacement methods, and writes the updated content back to the same file using `Files.write()`.
 
-The program is structured in three parts. First, it writes predefined content into a text file, showcasing the ability to create and write to files using `FileWriter`. Next, it reads the file content line by line using `BufferedReader`, which highlights how data can be retrieved and processed. Finally, the program performs content modification by replacing a specific string using `Files.readAllBytes` and `String.replace()`, and then overwrites the modified content back into the file.
+The project uses standard Java I/O classes including `FileReader`, `FileWriter`, `BufferedReader`, `BufferedWriter`, and the `java.nio.file` package. Exception handling is implemented to manage potential I/O errors during execution.
 
-The code is written with proper comments and follows clean coding practices to ensure readability and maintainability. Exception handling is used effectively to catch and handle any potential I/O errors, improving the reliability of the program.
-
-By completing this task, the intern gains hands-on experience with essential Java programming techniques. It also reinforces understanding of text processing, file stream management, and basic exception handling — which are key competencies in both front-end and full-stack development roles.
-
-This task not only builds technical proficiency but also encourages the habit of writing clean, well-documented code — a critical skill in real-world software projects. Mastery of file handling also sets the foundation for working with structured data formats like CSV, JSON, or XML in future applications.
-
-Overall, this project successfully fulfills the objectives of the internship module by integrating theoretical learning with practical application, helping interns develop a strong foundation in core programming concepts.
+This utility is a demonstration of how basic file operations can be implemented using core Java libraries, with clean code structure and inline comments for clarity.
 
 ---
 
@@ -36,14 +30,6 @@ Overall, this project successfully fulfills the objectives of the internship mod
 - `FileHandlingUtility.java` – Main Java source file
 - `example.txt` – Output text file (auto-generated)
 - `README.md` – Project documentation
-
----
-
-## RESOURCES USED
-- Java Official Documentation
-- GeeksforGeeks Java I/O Tutorials
-- YouTube Java File Handling Tutorials
-- ChatGPT (for guidance and explanation)
 
 ---
 
